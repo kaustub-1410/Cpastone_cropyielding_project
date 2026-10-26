@@ -15,7 +15,9 @@ import {
   Cpu,
   Layers,
   ShieldCheck,
+  Sparkles,
 } from 'lucide-react';
+
 import { api } from '../../services/api';
 import { SystemHealth } from '../../types';
 
@@ -86,7 +88,15 @@ export const AppLayout: React.FC = () => {
                 </NavLink>
               );
             })}
+            <a
+              href="/landing.html"
+              className="flex items-center space-x-3 px-3 py-2.5 rounded-lg text-sm font-medium text-amber-300 hover:text-amber-200 hover:bg-amber-500/10 border border-amber-500/30 mt-3 transition-all"
+            >
+              <Sparkles className="w-4 h-4 text-amber-400" />
+              <span>🌾 AgriSense Landing Page</span>
+            </a>
           </nav>
+
         </div>
 
         {/* Bottom System Status Widget */}
