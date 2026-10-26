@@ -1,0 +1,13 @@
+# Vercel Ignore File
+backend/tests/
+backend/data/raw/
+.pytest_cache/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.git/
+.github/
+docs/
