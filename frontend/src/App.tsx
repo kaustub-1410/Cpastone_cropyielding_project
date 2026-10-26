@@ -11,9 +11,14 @@ import { HistoryPage } from './pages/HistoryPage';
 import { AboutPage } from './pages/AboutPage';
 
 export const App: React.FC = () => {
+  const basename = typeof window !== 'undefined' && window.location.pathname.startsWith('/dashboard')
+    ? '/dashboard'
+    : '/';
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
+
         <Route path="/" element={<AppLayout />}>
           <Route index element={<OverviewPage />} />
           <Route path="predict" element={<PredictionPage />} />

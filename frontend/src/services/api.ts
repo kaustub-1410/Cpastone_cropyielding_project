@@ -11,10 +11,14 @@ import {
   SystemHealth,
 } from '../types';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+const isLocal = typeof window !== 'undefined' && 
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || (isLocal ? 'http://127.0.0.1:8000/api' : '/api');
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
+
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json',

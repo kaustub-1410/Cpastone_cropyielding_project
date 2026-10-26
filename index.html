@@ -940,6 +940,7 @@
       <a href="#predict" class="nav-link">Predictions</a>
       <a href="#insights" class="nav-link">Data & Models</a>
       <a href="#alerts" class="nav-link">Insights</a>
+      <a href="/dashboard" class="nav-link" id="navDashboardLink" style="color: #79A85B; font-weight: 600;">Analytics Dashboard</a>
     </nav>
 
     <!-- Right Action Button -->
@@ -996,9 +997,9 @@
           <span>Predict Crop Yield</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#insights" class="btn-secondary">
+        <a href="/dashboard" class="btn-secondary" id="heroDashboardLink">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
-          <span>Explore Insights</span>
+          <span>Open Analytics Dashboard</span>
         </a>
       </div>
     </div>
@@ -1440,8 +1441,8 @@
         <a href="#predict">Predictions</a>
         <a href="#insights">Insights</a>
         <a href="#alerts">Risk Alerts</a>
-        <a href="http://localhost:8000/docs" target="_blank" rel="noopener">FastAPI Swagger</a>
-        <a href="http://localhost:5173" target="_blank" rel="noopener">Full React Dashboard</a>
+        <a href="/docs" id="swaggerLink" target="_blank" rel="noopener">FastAPI Swagger</a>
+        <a href="/dashboard" id="dashboardLink" target="_blank" rel="noopener">Full React Dashboard</a>
       </div>
 
       <p class="footer-disclaimer">
@@ -1459,7 +1460,13 @@
        Application Logic & Backend Integration
        ========================================================================== -->
   <script>
-    const API_BASE = 'http://127.0.0.1:8000/api';
+    const isLocal = window.location.protocol === 'file:' || 
+      window.location.hostname === '127.0.0.1' || 
+      window.location.hostname === 'localhost';
+
+    const API_BASE = isLocal ? 'http://127.0.0.1:8000/api' : '/api';
+    const DASHBOARD_URL = isLocal ? 'http://127.0.0.1:5173' : '/dashboard';
+    const SWAGGER_URL = isLocal ? 'http://127.0.0.1:8000/docs' : '/docs';
 
     // Preset Data Configuration
     const PRESETS = {
@@ -1682,6 +1689,13 @@
 
     // Execute on page load
     document.addEventListener('DOMContentLoaded', () => {
+      // Configure dynamic links for local vs cloud deployment
+      document.querySelectorAll('#navDashboardLink, #heroDashboardLink, #dashboardLink').forEach(el => {
+        if (el) el.href = DASHBOARD_URL;
+      });
+      const swaggerEl = document.getElementById('swaggerLink');
+      if (swaggerEl) swaggerEl.href = SWAGGER_URL;
+
       initBackendData();
     });
   </script>
