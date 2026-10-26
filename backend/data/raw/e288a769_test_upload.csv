@@ -1,0 +1,15 @@
+field_id,crop,season,region,rainfall_mm,temperature_min_c,temperature_max_c,humidity,soil_ph,soil_nitrogen,soil_phosphorus,soil_potassium,soil_moisture,irrigation,fertilizer_usage,actual_yield_t_ha
+F1,Wheat,Rabi,Punjab,450,11,25,60,6.8,140,50,50,30,Canal,150,4.2
+F2,Rice,Kharif,Bihar,1200,22,34,80,6.5,130,45,55,40,Canal,160,3.8
+F3,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F4,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F5,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F6,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F7,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F8,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F9,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F10,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F11,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F12,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F13,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5
+F14,Maize,Kharif,Karnataka,650,18,31,65,6.6,130,50,50,30,Drip,140,4.5

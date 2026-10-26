@@ -1,0 +1,1275 @@
+{
+  "model_key": "ridge_regression",
+  "model_name": "Ridge Linear Regressor",
+  "algorithm": "Ridge",
+  "version": "v1.0.0",
+  "test_sample_size": 292,
+  "overall_metrics": {
+    "rmse": 0.2413,
+    "mae": 0.1926,
+    "r2": 0.9367,
+    "mape": 7.37,
+    "bias": -0.0017,
+    "coverage_90": 91.1
+  },
+  "calibration_quantile_90": 0.3871,
+  "is_synthetic_evaluation": true,
+  "provenance": "Synthetic Agronomic Simulation - Capstone BT195",
+  "scatter_points": [
+    {
+      "actual": 2.02,
+      "predicted": 2.0,
+      "lower": 1.61,
+      "upper": 2.39,
+      "crop": "Soybean",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-520"
+    },
+    {
+      "actual": 3.04,
+      "predicted": 3.24,
+      "lower": 2.85,
+      "upper": 3.63,
+      "crop": "Rice",
+      "region": "Rajasthan",
+      "field_id": "FLD-394"
+    },
+    {
+      "actual": 1.85,
+      "predicted": 1.89,
+      "lower": 1.5,
+      "upper": 2.28,
+      "crop": "Sorghum",
+      "region": "Punjab",
+      "field_id": "FLD-551"
+    },
+    {
+      "actual": 2.91,
+      "predicted": 3.56,
+      "lower": 3.17,
+      "upper": 3.95,
+      "crop": "Wheat",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-642"
+    },
+    {
+      "actual": 4.81,
+      "predicted": 4.6,
+      "lower": 4.21,
+      "upper": 4.99,
+      "crop": "Maize",
+      "region": "Karnataka",
+      "field_id": "FLD-572"
+    },
+    {
+      "actual": 1.8,
+      "predicted": 2.06,
+      "lower": 1.67,
+      "upper": 2.45,
+      "crop": "Cotton",
+      "region": "Haryana",
+      "field_id": "FLD-763"
+    },
+    {
+      "actual": 1.79,
+      "predicted": 1.64,
+      "lower": 1.25,
+      "upper": 2.03,
+      "crop": "Sorghum",
+      "region": "Rajasthan",
+      "field_id": "FLD-382"
+    },
+    {
+      "actual": 3.09,
+      "predicted": 2.87,
+      "lower": 2.48,
+      "upper": 3.26,
+      "crop": "Barley",
+      "region": "West Bengal",
+      "field_id": "FLD-133"
+    },
+    {
+      "actual": 2.75,
+      "predicted": 2.84,
+      "lower": 2.45,
+      "upper": 3.23,
+      "crop": "Barley",
+      "region": "Rajasthan",
+      "field_id": "FLD-603"
+    },
+    {
+      "actual": 1.85,
+      "predicted": 1.84,
+      "lower": 1.45,
+      "upper": 2.22,
+      "crop": "Soybean",
+      "region": "Rajasthan",
+      "field_id": "FLD-920"
+    },
+    {
+      "actual": 2.33,
+      "predicted": 2.16,
+      "lower": 1.78,
+      "upper": 2.55,
+      "crop": "Soybean",
+      "region": "Rajasthan",
+      "field_id": "FLD-770"
+    },
+    {
+      "actual": 3.14,
+      "predicted": 2.83,
+      "lower": 2.44,
+      "upper": 3.21,
+      "crop": "Barley",
+      "region": "Rajasthan",
+      "field_id": "FLD-122"
+    },
+    {
+      "actual": 1.89,
+      "predicted": 2.0,
+      "lower": 1.61,
+      "upper": 2.39,
+      "crop": "Sorghum",
+      "region": "Haryana",
+      "field_id": "FLD-582"
+    },
+    {
+      "actual": 2.53,
+      "predicted": 2.88,
+      "lower": 2.5,
+      "upper": 3.27,
+      "crop": "Barley",
+      "region": "Maharashtra",
+      "field_id": "FLD-481"
+    },
+    {
+      "actual": 2.25,
+      "predicted": 1.9,
+      "lower": 1.52,
+      "upper": 2.29,
+      "crop": "Soybean",
+      "region": "Karnataka",
+      "field_id": "FLD-192"
+    },
+    {
+      "actual": 3.62,
+      "predicted": 3.61,
+      "lower": 3.23,
+      "upper": 4.0,
+      "crop": "Rice",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-629"
+    },
+    {
+      "actual": 3.61,
+      "predicted": 3.2,
+      "lower": 2.81,
+      "upper": 3.59,
+      "crop": "Wheat",
+      "region": "Bihar",
+      "field_id": "FLD-427"
+    },
+    {
+      "actual": 3.59,
+      "predicted": 3.86,
+      "lower": 3.47,
+      "upper": 4.24,
+      "crop": "Wheat",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-313"
+    },
+    {
+      "actual": 2.44,
+      "predicted": 2.02,
+      "lower": 1.64,
+      "upper": 2.41,
+      "crop": "Cotton",
+      "region": "Rajasthan",
+      "field_id": "FLD-663"
+    },
+    {
+      "actual": 4.14,
+      "predicted": 4.04,
+      "lower": 3.65,
+      "upper": 4.43,
+      "crop": "Maize",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-645"
+    },
+    {
+      "actual": 2.04,
+      "predicted": 1.98,
+      "lower": 1.59,
+      "upper": 2.37,
+      "crop": "Cotton",
+      "region": "Bihar",
+      "field_id": "FLD-416"
+    },
+    {
+      "actual": 3.18,
+      "predicted": 3.23,
+      "lower": 2.84,
+      "upper": 3.61,
+      "crop": "Wheat",
+      "region": "Karnataka",
+      "field_id": "FLD-699"
+    },
+    {
+      "actual": 4.5,
+      "predicted": 4.39,
+      "lower": 4.0,
+      "upper": 4.77,
+      "crop": "Maize",
+      "region": "Bihar",
+      "field_id": "FLD-206"
+    },
+    {
+      "actual": 3.3,
+      "predicted": 3.09,
+      "lower": 2.71,
+      "upper": 3.48,
+      "crop": "Rice",
+      "region": "Rajasthan",
+      "field_id": "FLD-436"
+    },
+    {
+      "actual": 4.23,
+      "predicted": 4.57,
+      "lower": 4.19,
+      "upper": 4.96,
+      "crop": "Maize",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-361"
+    },
+    {
+      "actual": 3.92,
+      "predicted": 3.78,
+      "lower": 3.39,
+      "upper": 4.17,
+      "crop": "Wheat",
+      "region": "Bihar",
+      "field_id": "FLD-533"
+    },
+    {
+      "actual": 3.17,
+      "predicted": 2.83,
+      "lower": 2.44,
+      "upper": 3.22,
+      "crop": "Barley",
+      "region": "Bihar",
+      "field_id": "FLD-275"
+    },
+    {
+      "actual": 3.01,
+      "predicted": 3.0,
+      "lower": 2.61,
+      "upper": 3.39,
+      "crop": "Rice",
+      "region": "Punjab",
+      "field_id": "FLD-713"
+    },
+    {
+      "actual": 1.7,
+      "predicted": 1.56,
+      "lower": 1.18,
+      "upper": 1.95,
+      "crop": "Soybean",
+      "region": "Karnataka",
+      "field_id": "FLD-178"
+    },
+    {
+      "actual": 1.61,
+      "predicted": 1.54,
+      "lower": 1.15,
+      "upper": 1.93,
+      "crop": "Cotton",
+      "region": "Bihar",
+      "field_id": "FLD-793"
+    },
+    {
+      "actual": 1.49,
+      "predicted": 1.99,
+      "lower": 1.6,
+      "upper": 2.38,
+      "crop": "Sorghum",
+      "region": "Gujarat",
+      "field_id": "FLD-489"
+    },
+    {
+      "actual": 1.9,
+      "predicted": 1.62,
+      "lower": 1.24,
+      "upper": 2.01,
+      "crop": "Soybean",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-872"
+    },
+    {
+      "actual": 1.68,
+      "predicted": 1.75,
+      "lower": 1.36,
+      "upper": 2.14,
+      "crop": "Soybean",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-144"
+    },
+    {
+      "actual": 4.25,
+      "predicted": 4.47,
+      "lower": 4.09,
+      "upper": 4.86,
+      "crop": "Maize",
+      "region": "Haryana",
+      "field_id": "FLD-482"
+    },
+    {
+      "actual": 1.86,
+      "predicted": 1.67,
+      "lower": 1.28,
+      "upper": 2.05,
+      "crop": "Sorghum",
+      "region": "Gujarat",
+      "field_id": "FLD-336"
+    },
+    {
+      "actual": 1.33,
+      "predicted": 1.28,
+      "lower": 0.89,
+      "upper": 1.67,
+      "crop": "Sorghum",
+      "region": "Karnataka",
+      "field_id": "FLD-183"
+    },
+    {
+      "actual": 1.52,
+      "predicted": 1.68,
+      "lower": 1.29,
+      "upper": 2.06,
+      "crop": "Sorghum",
+      "region": "Bihar",
+      "field_id": "FLD-766"
+    },
+    {
+      "actual": 1.94,
+      "predicted": 1.87,
+      "lower": 1.48,
+      "upper": 2.25,
+      "crop": "Soybean",
+      "region": "Karnataka",
+      "field_id": "FLD-833"
+    },
+    {
+      "actual": 1.35,
+      "predicted": 1.44,
+      "lower": 1.06,
+      "upper": 1.83,
+      "crop": "Sorghum",
+      "region": "Gujarat",
+      "field_id": "FLD-968"
+    },
+    {
+      "actual": 2.81,
+      "predicted": 2.66,
+      "lower": 2.28,
+      "upper": 3.05,
+      "crop": "Barley",
+      "region": "Punjab",
+      "field_id": "FLD-718"
+    },
+    {
+      "actual": 3.42,
+      "predicted": 3.35,
+      "lower": 2.97,
+      "upper": 3.74,
+      "crop": "Wheat",
+      "region": "Bihar",
+      "field_id": "FLD-911"
+    },
+    {
+      "actual": 2.46,
+      "predicted": 2.28,
+      "lower": 1.89,
+      "upper": 2.67,
+      "crop": "Soybean",
+      "region": "Rajasthan",
+      "field_id": "FLD-142"
+    },
+    {
+      "actual": 1.69,
+      "predicted": 1.69,
+      "lower": 1.3,
+      "upper": 2.08,
+      "crop": "Soybean",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-118"
+    },
+    {
+      "actual": 2.71,
+      "predicted": 2.85,
+      "lower": 2.47,
+      "upper": 3.24,
+      "crop": "Barley",
+      "region": "Punjab",
+      "field_id": "FLD-222"
+    },
+    {
+      "actual": 2.05,
+      "predicted": 2.06,
+      "lower": 1.67,
+      "upper": 2.45,
+      "crop": "Soybean",
+      "region": "Bihar",
+      "field_id": "FLD-683"
+    },
+    {
+      "actual": 3.37,
+      "predicted": 3.28,
+      "lower": 2.89,
+      "upper": 3.66,
+      "crop": "Rice",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-312"
+    },
+    {
+      "actual": 1.61,
+      "predicted": 1.59,
+      "lower": 1.2,
+      "upper": 1.97,
+      "crop": "Cotton",
+      "region": "Maharashtra",
+      "field_id": "FLD-148"
+    },
+    {
+      "actual": 2.78,
+      "predicted": 2.77,
+      "lower": 2.38,
+      "upper": 3.16,
+      "crop": "Barley",
+      "region": "Karnataka",
+      "field_id": "FLD-718"
+    },
+    {
+      "actual": 1.87,
+      "predicted": 1.71,
+      "lower": 1.32,
+      "upper": 2.09,
+      "crop": "Cotton",
+      "region": "Karnataka",
+      "field_id": "FLD-164"
+    },
+    {
+      "actual": 3.64,
+      "predicted": 3.61,
+      "lower": 3.23,
+      "upper": 4.0,
+      "crop": "Wheat",
+      "region": "Maharashtra",
+      "field_id": "FLD-670"
+    },
+    {
+      "actual": 3.23,
+      "predicted": 3.61,
+      "lower": 3.22,
+      "upper": 3.99,
+      "crop": "Maize",
+      "region": "Karnataka",
+      "field_id": "FLD-949"
+    },
+    {
+      "actual": 3.71,
+      "predicted": 3.87,
+      "lower": 3.48,
+      "upper": 4.25,
+      "crop": "Rice",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-365"
+    },
+    {
+      "actual": 1.69,
+      "predicted": 2.25,
+      "lower": 1.86,
+      "upper": 2.64,
+      "crop": "Cotton",
+      "region": "Punjab",
+      "field_id": "FLD-705"
+    },
+    {
+      "actual": 3.81,
+      "predicted": 3.81,
+      "lower": 3.43,
+      "upper": 4.2,
+      "crop": "Wheat",
+      "region": "Rajasthan",
+      "field_id": "FLD-471"
+    },
+    {
+      "actual": 4.03,
+      "predicted": 3.75,
+      "lower": 3.37,
+      "upper": 4.14,
+      "crop": "Wheat",
+      "region": "Gujarat",
+      "field_id": "FLD-429"
+    },
+    {
+      "actual": 2.62,
+      "predicted": 2.82,
+      "lower": 2.44,
+      "upper": 3.21,
+      "crop": "Barley",
+      "region": "Haryana",
+      "field_id": "FLD-839"
+    },
+    {
+      "actual": 1.62,
+      "predicted": 1.55,
+      "lower": 1.16,
+      "upper": 1.94,
+      "crop": "Soybean",
+      "region": "Maharashtra",
+      "field_id": "FLD-894"
+    },
+    {
+      "actual": 3.36,
+      "predicted": 3.43,
+      "lower": 3.04,
+      "upper": 3.81,
+      "crop": "Wheat",
+      "region": "West Bengal",
+      "field_id": "FLD-828"
+    },
+    {
+      "actual": 1.66,
+      "predicted": 1.79,
+      "lower": 1.4,
+      "upper": 2.18,
+      "crop": "Sorghum",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-309"
+    },
+    {
+      "actual": 3.34,
+      "predicted": 3.51,
+      "lower": 3.12,
+      "upper": 3.89,
+      "crop": "Rice",
+      "region": "Bihar",
+      "field_id": "FLD-458"
+    },
+    {
+      "actual": 3.9,
+      "predicted": 4.31,
+      "lower": 3.92,
+      "upper": 4.7,
+      "crop": "Maize",
+      "region": "Karnataka",
+      "field_id": "FLD-306"
+    },
+    {
+      "actual": 3.56,
+      "predicted": 3.5,
+      "lower": 3.11,
+      "upper": 3.89,
+      "crop": "Rice",
+      "region": "West Bengal",
+      "field_id": "FLD-701"
+    },
+    {
+      "actual": 4.05,
+      "predicted": 4.39,
+      "lower": 4.01,
+      "upper": 4.78,
+      "crop": "Maize",
+      "region": "Gujarat",
+      "field_id": "FLD-935"
+    },
+    {
+      "actual": 3.45,
+      "predicted": 3.36,
+      "lower": 2.97,
+      "upper": 3.75,
+      "crop": "Rice",
+      "region": "Karnataka",
+      "field_id": "FLD-197"
+    },
+    {
+      "actual": 3.89,
+      "predicted": 3.62,
+      "lower": 3.23,
+      "upper": 4.0,
+      "crop": "Wheat",
+      "region": "Bihar",
+      "field_id": "FLD-505"
+    },
+    {
+      "actual": 2.51,
+      "predicted": 2.72,
+      "lower": 2.33,
+      "upper": 3.1,
+      "crop": "Barley",
+      "region": "Rajasthan",
+      "field_id": "FLD-677"
+    },
+    {
+      "actual": 1.88,
+      "predicted": 2.07,
+      "lower": 1.69,
+      "upper": 2.46,
+      "crop": "Soybean",
+      "region": "Gujarat",
+      "field_id": "FLD-832"
+    },
+    {
+      "actual": 2.99,
+      "predicted": 3.07,
+      "lower": 2.69,
+      "upper": 3.46,
+      "crop": "Barley",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-888"
+    },
+    {
+      "actual": 3.42,
+      "predicted": 2.9,
+      "lower": 2.51,
+      "upper": 3.29,
+      "crop": "Barley",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-459"
+    },
+    {
+      "actual": 1.4,
+      "predicted": 1.69,
+      "lower": 1.3,
+      "upper": 2.08,
+      "crop": "Sorghum",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-806"
+    },
+    {
+      "actual": 2.28,
+      "predicted": 1.97,
+      "lower": 1.58,
+      "upper": 2.36,
+      "crop": "Sorghum",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-109"
+    },
+    {
+      "actual": 1.58,
+      "predicted": 1.9,
+      "lower": 1.51,
+      "upper": 2.28,
+      "crop": "Soybean",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-320"
+    },
+    {
+      "actual": 2.89,
+      "predicted": 3.2,
+      "lower": 2.82,
+      "upper": 3.59,
+      "crop": "Barley",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-220"
+    },
+    {
+      "actual": 1.66,
+      "predicted": 1.86,
+      "lower": 1.47,
+      "upper": 2.25,
+      "crop": "Sorghum",
+      "region": "Rajasthan",
+      "field_id": "FLD-335"
+    },
+    {
+      "actual": 1.87,
+      "predicted": 1.83,
+      "lower": 1.44,
+      "upper": 2.21,
+      "crop": "Cotton",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-856"
+    },
+    {
+      "actual": 3.54,
+      "predicted": 4.04,
+      "lower": 3.65,
+      "upper": 4.43,
+      "crop": "Maize",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-823"
+    },
+    {
+      "actual": 1.99,
+      "predicted": 1.83,
+      "lower": 1.44,
+      "upper": 2.21,
+      "crop": "Sorghum",
+      "region": "Haryana",
+      "field_id": "FLD-584"
+    },
+    {
+      "actual": 2.13,
+      "predicted": 2.04,
+      "lower": 1.66,
+      "upper": 2.43,
+      "crop": "Cotton",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-985"
+    },
+    {
+      "actual": 3.17,
+      "predicted": 3.16,
+      "lower": 2.78,
+      "upper": 3.55,
+      "crop": "Rice",
+      "region": "Rajasthan",
+      "field_id": "FLD-441"
+    },
+    {
+      "actual": 2.14,
+      "predicted": 2.31,
+      "lower": 1.92,
+      "upper": 2.7,
+      "crop": "Soybean",
+      "region": "Gujarat",
+      "field_id": "FLD-370"
+    },
+    {
+      "actual": 4.04,
+      "predicted": 3.98,
+      "lower": 3.6,
+      "upper": 4.37,
+      "crop": "Wheat",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-395"
+    },
+    {
+      "actual": 3.54,
+      "predicted": 3.9,
+      "lower": 3.52,
+      "upper": 4.29,
+      "crop": "Wheat",
+      "region": "Punjab",
+      "field_id": "FLD-137"
+    },
+    {
+      "actual": 4.51,
+      "predicted": 4.04,
+      "lower": 3.66,
+      "upper": 4.43,
+      "crop": "Maize",
+      "region": "West Bengal",
+      "field_id": "FLD-713"
+    },
+    {
+      "actual": 3.88,
+      "predicted": 3.66,
+      "lower": 3.27,
+      "upper": 4.04,
+      "crop": "Rice",
+      "region": "Bihar",
+      "field_id": "FLD-523"
+    },
+    {
+      "actual": 3.3,
+      "predicted": 3.24,
+      "lower": 2.86,
+      "upper": 3.63,
+      "crop": "Rice",
+      "region": "Haryana",
+      "field_id": "FLD-716"
+    },
+    {
+      "actual": 1.43,
+      "predicted": 1.61,
+      "lower": 1.22,
+      "upper": 1.99,
+      "crop": "Cotton",
+      "region": "Punjab",
+      "field_id": "FLD-308"
+    },
+    {
+      "actual": 2.14,
+      "predicted": 2.52,
+      "lower": 2.13,
+      "upper": 2.9,
+      "crop": "Barley",
+      "region": "Maharashtra",
+      "field_id": "FLD-419"
+    },
+    {
+      "actual": 2.12,
+      "predicted": 2.32,
+      "lower": 1.93,
+      "upper": 2.71,
+      "crop": "Cotton",
+      "region": "Gujarat",
+      "field_id": "FLD-538"
+    },
+    {
+      "actual": 2.07,
+      "predicted": 2.22,
+      "lower": 1.83,
+      "upper": 2.6,
+      "crop": "Soybean",
+      "region": "Maharashtra",
+      "field_id": "FLD-848"
+    },
+    {
+      "actual": 1.5,
+      "predicted": 1.85,
+      "lower": 1.46,
+      "upper": 2.24,
+      "crop": "Soybean",
+      "region": "Haryana",
+      "field_id": "FLD-770"
+    },
+    {
+      "actual": 4.13,
+      "predicted": 3.95,
+      "lower": 3.56,
+      "upper": 4.34,
+      "crop": "Rice",
+      "region": "Maharashtra",
+      "field_id": "FLD-937"
+    },
+    {
+      "actual": 2.73,
+      "predicted": 2.98,
+      "lower": 2.59,
+      "upper": 3.37,
+      "crop": "Barley",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-108"
+    },
+    {
+      "actual": 3.52,
+      "predicted": 3.46,
+      "lower": 3.07,
+      "upper": 3.85,
+      "crop": "Barley",
+      "region": "Haryana",
+      "field_id": "FLD-343"
+    },
+    {
+      "actual": 1.64,
+      "predicted": 1.93,
+      "lower": 1.54,
+      "upper": 2.31,
+      "crop": "Cotton",
+      "region": "Haryana",
+      "field_id": "FLD-870"
+    },
+    {
+      "actual": 3.16,
+      "predicted": 3.0,
+      "lower": 2.61,
+      "upper": 3.39,
+      "crop": "Barley",
+      "region": "Rajasthan",
+      "field_id": "FLD-521"
+    },
+    {
+      "actual": 3.13,
+      "predicted": 2.85,
+      "lower": 2.46,
+      "upper": 3.24,
+      "crop": "Barley",
+      "region": "Punjab",
+      "field_id": "FLD-196"
+    },
+    {
+      "actual": 1.56,
+      "predicted": 1.93,
+      "lower": 1.55,
+      "upper": 2.32,
+      "crop": "Cotton",
+      "region": "Gujarat",
+      "field_id": "FLD-932"
+    },
+    {
+      "actual": 3.94,
+      "predicted": 3.7,
+      "lower": 3.32,
+      "upper": 4.09,
+      "crop": "Wheat",
+      "region": "Bihar",
+      "field_id": "FLD-155"
+    },
+    {
+      "actual": 2.41,
+      "predicted": 2.33,
+      "lower": 1.94,
+      "upper": 2.71,
+      "crop": "Soybean",
+      "region": "Gujarat",
+      "field_id": "FLD-584"
+    },
+    {
+      "actual": 3.86,
+      "predicted": 3.71,
+      "lower": 3.32,
+      "upper": 4.09,
+      "crop": "Wheat",
+      "region": "Gujarat",
+      "field_id": "FLD-245"
+    },
+    {
+      "actual": 2.08,
+      "predicted": 2.07,
+      "lower": 1.68,
+      "upper": 2.45,
+      "crop": "Cotton",
+      "region": "Rajasthan",
+      "field_id": "FLD-411"
+    },
+    {
+      "actual": 3.84,
+      "predicted": 3.68,
+      "lower": 3.29,
+      "upper": 4.06,
+      "crop": "Wheat",
+      "region": "West Bengal",
+      "field_id": "FLD-916"
+    },
+    {
+      "actual": 1.78,
+      "predicted": 1.69,
+      "lower": 1.3,
+      "upper": 2.08,
+      "crop": "Sorghum",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-264"
+    },
+    {
+      "actual": 3.51,
+      "predicted": 3.98,
+      "lower": 3.59,
+      "upper": 4.36,
+      "crop": "Wheat",
+      "region": "West Bengal",
+      "field_id": "FLD-194"
+    },
+    {
+      "actual": 4.07,
+      "predicted": 3.77,
+      "lower": 3.38,
+      "upper": 4.16,
+      "crop": "Wheat",
+      "region": "Karnataka",
+      "field_id": "FLD-124"
+    },
+    {
+      "actual": 4.92,
+      "predicted": 4.62,
+      "lower": 4.23,
+      "upper": 5.01,
+      "crop": "Maize",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-836"
+    },
+    {
+      "actual": 3.11,
+      "predicted": 3.18,
+      "lower": 2.8,
+      "upper": 3.57,
+      "crop": "Rice",
+      "region": "Maharashtra",
+      "field_id": "FLD-689"
+    },
+    {
+      "actual": 3.33,
+      "predicted": 3.46,
+      "lower": 3.07,
+      "upper": 3.85,
+      "crop": "Wheat",
+      "region": "Karnataka",
+      "field_id": "FLD-485"
+    },
+    {
+      "actual": 1.83,
+      "predicted": 1.72,
+      "lower": 1.33,
+      "upper": 2.11,
+      "crop": "Sorghum",
+      "region": "Haryana",
+      "field_id": "FLD-749"
+    },
+    {
+      "actual": 3.43,
+      "predicted": 3.78,
+      "lower": 3.39,
+      "upper": 4.16,
+      "crop": "Rice",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-433"
+    },
+    {
+      "actual": 2.34,
+      "predicted": 2.55,
+      "lower": 2.17,
+      "upper": 2.94,
+      "crop": "Barley",
+      "region": "Uttar Pradesh",
+      "field_id": "FLD-651"
+    },
+    {
+      "actual": 3.51,
+      "predicted": 3.4,
+      "lower": 3.01,
+      "upper": 3.78,
+      "crop": "Rice",
+      "region": "Haryana",
+      "field_id": "FLD-690"
+    },
+    {
+      "actual": 1.87,
+      "predicted": 1.98,
+      "lower": 1.59,
+      "upper": 2.37,
+      "crop": "Sorghum",
+      "region": "Bihar",
+      "field_id": "FLD-601"
+    },
+    {
+      "actual": 1.52,
+      "predicted": 1.62,
+      "lower": 1.24,
+      "upper": 2.01,
+      "crop": "Sorghum",
+      "region": "Bihar",
+      "field_id": "FLD-128"
+    },
+    {
+      "actual": 2.3,
+      "predicted": 2.73,
+      "lower": 2.34,
+      "upper": 3.12,
+      "crop": "Barley",
+      "region": "Punjab",
+      "field_id": "FLD-515"
+    },
+    {
+      "actual": 1.74,
+      "predicted": 1.75,
+      "lower": 1.37,
+      "upper": 2.14,
+      "crop": "Cotton",
+      "region": "Maharashtra",
+      "field_id": "FLD-977"
+    },
+    {
+      "actual": 3.34,
+      "predicted": 3.65,
+      "lower": 3.26,
+      "upper": 4.03,
+      "crop": "Wheat",
+      "region": "Madhya Pradesh",
+      "field_id": "FLD-760"
+    },
+    {
+      "actual": 3.41,
+      "predicted": 3.21,
+      "lower": 2.82,
+      "upper": 3.6,
+      "crop": "Wheat",
+      "region": "Karnataka",
+      "field_id": "FLD-701"
+    },
+    {
+      "actual": 1.85,
+      "predicted": 2.0,
+      "lower": 1.62,
+      "upper": 2.39,
+      "crop": "Soybean",
+      "region": "West Bengal",
+      "field_id": "FLD-405"
+    },
+    {
+      "actual": 1.74,
+      "predicted": 1.69,
+      "lower": 1.3,
+      "upper": 2.07,
+      "crop": "Cotton",
+      "region": "Maharashtra",
+      "field_id": "FLD-742"
+    }
+  ],
+  "residual_distribution": [
+    {
+      "bin": "-0.91 to -0.78",
+      "count": 1,
+      "midpoint": -0.84
+    },
+    {
+      "bin": "-0.78 to -0.65",
+      "count": 0,
+      "midpoint": -0.71
+    },
+    {
+      "bin": "-0.65 to -0.51",
+      "count": 2,
+      "midpoint": -0.58
+    },
+    {
+      "bin": "-0.51 to -0.38",
+      "count": 11,
+      "midpoint": -0.45
+    },
+    {
+      "bin": "-0.38 to -0.25",
+      "count": 29,
+      "midpoint": -0.32
+    },
+    {
+      "bin": "-0.25 to -0.12",
+      "count": 49,
+      "midpoint": -0.19
+    },
+    {
+      "bin": "-0.12 to 0.01",
+      "count": 74,
+      "midpoint": -0.05
+    },
+    {
+      "bin": "0.01 to 0.14",
+      "count": 39,
+      "midpoint": 0.08
+    },
+    {
+      "bin": "0.14 to 0.27",
+      "count": 49,
+      "midpoint": 0.21
+    },
+    {
+      "bin": "0.27 to 0.41",
+      "count": 26,
+      "midpoint": 0.34
+    },
+    {
+      "bin": "0.41 to 0.54",
+      "count": 7,
+      "midpoint": 0.47
+    },
+    {
+      "bin": "0.54 to 0.67",
+      "count": 5,
+      "midpoint": 0.6
+    }
+  ],
+  "per_crop_metrics": {
+    "Soybean": {
+      "sample_count": 42,
+      "rmse": 0.194,
+      "mae": 0.1497,
+      "r2": 0.3258,
+      "mape": 8.07
+    },
+    "Barley": {
+      "sample_count": 41,
+      "rmse": 0.273,
+      "mae": 0.2392,
+      "r2": 0.3903,
+      "mape": 8.61
+    },
+    "Rice": {
+      "sample_count": 43,
+      "rmse": 0.2011,
+      "mae": 0.1622,
+      "r2": 0.6875,
+      "mape": 4.65
+    },
+    "Wheat": {
+      "sample_count": 53,
+      "rmse": 0.2944,
+      "mae": 0.2281,
+      "r2": 0.3628,
+      "mape": 6.22
+    },
+    "Sorghum": {
+      "sample_count": 41,
+      "rmse": 0.2102,
+      "mae": 0.1712,
+      "r2": 0.2615,
+      "mape": 9.78
+    },
+    "Cotton": {
+      "sample_count": 37,
+      "rmse": 0.2069,
+      "mae": 0.1616,
+      "r2": 0.1856,
+      "mape": 9.0
+    },
+    "Maize": {
+      "sample_count": 35,
+      "rmse": 0.2746,
+      "mae": 0.2313,
+      "r2": 0.4765,
+      "mape": 5.58
+    }
+  },
+  "per_region_metrics": {
+    "Uttar Pradesh": {
+      "sample_count": 33,
+      "rmse": 0.2475,
+      "mae": 0.2026,
+      "r2": 0.9343
+    },
+    "Punjab": {
+      "sample_count": 27,
+      "rmse": 0.241,
+      "mae": 0.2005,
+      "r2": 0.9372
+    },
+    "Rajasthan": {
+      "sample_count": 27,
+      "rmse": 0.2627,
+      "mae": 0.1967,
+      "r2": 0.8866
+    },
+    "Bihar": {
+      "sample_count": 30,
+      "rmse": 0.1968,
+      "mae": 0.1566,
+      "r2": 0.9616
+    },
+    "Karnataka": {
+      "sample_count": 31,
+      "rmse": 0.2238,
+      "mae": 0.1698,
+      "r2": 0.9473
+    },
+    "Madhya Pradesh": {
+      "sample_count": 31,
+      "rmse": 0.2495,
+      "mae": 0.1898,
+      "r2": 0.934
+    },
+    "Gujarat": {
+      "sample_count": 29,
+      "rmse": 0.2392,
+      "mae": 0.208,
+      "r2": 0.9353
+    },
+    "Haryana": {
+      "sample_count": 34,
+      "rmse": 0.2502,
+      "mae": 0.208,
+      "r2": 0.9347
+    },
+    "West Bengal": {
+      "sample_count": 25,
+      "rmse": 0.2796,
+      "mae": 0.2341,
+      "r2": 0.9148
+    },
+    "Maharashtra": {
+      "sample_count": 25,
+      "rmse": 0.2157,
+      "mae": 0.1616,
+      "r2": 0.9435
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "timestamp": "2026-10-26T19:35:55.617719",
+  "selected_model_key": "ridge_regression",
+  "selected_model_name": "Ridge Linear Regressor",
+  "selected_model_version": "v1.0.0",
+  "calibration_quantile_90": 0.3871,
+  "is_synthetic_trained": true,
+  "provenance": "Synthetic Agronomic Simulation - Capstone BT195",
+  "dataset_path": "C:\\Users\\kaust\\Downloads\\Capstone_Crope_Yield_Detetction_System\\backend\\data\\sample\\crop_yield_sample_dataset.csv",
+  "dataset_rows": 1500,
+  "train_size": 894,
+  "val_size": 311,
+  "test_size": 292,
+  "feature_names": [
+    "rainfall_mm",
+    "temperature_min_c",
+    "temperature_max_c",
+    "humidity",
+    "soil_ph",
+    "soil_nitrogen",
+    "soil_phosphorus",
+    "soil_potassium",
+    "soil_moisture",
+    "fertilizer_usage",
+    "vegetation_index_ndvi",
+    "previous_season_yield",
+    "avg_temperature",
+    "temp_range",
+    "growing_degree_days",
+    "heat_stress_index",
+    "aridity_index",
+    "npk_total",
+    "npk_ratio",
+    "ph_optimality_deviation",
+    "effective_moisture_index",
+    "ndvi_vigor_potential",
+    "previous_season_yield_filled",
+    "crop_Barley",
+    "crop_Cotton",
+    "crop_Maize",
+    "crop_Rice",
+    "crop_Sorghum",
+    "crop_Soybean",
+    "crop_Wheat",
+    "season_Kharif",
+    "season_Rabi",
+    "season_Zaid",
+    "region_Bihar",
+    "region_Gujarat",
+    "region_Haryana",
+    "region_Karnataka",
+    "region_Madhya Pradesh",
+    "region_Maharashtra",
+    "region_Punjab",
+    "region_Rajasthan",
+    "region_Uttar Pradesh",
+    "region_West Bengal",
+    "irrigation_Canal",
+    "irrigation_Drip",
+    "irrigation_Rainfed",
+    "irrigation_Sprinkler",
+    "irrigation_Tube Well"
+  ],
+  "models": {
+    "dummy_baseline": {
+      "key": "dummy_baseline",
+      "name": "Dummy Baseline (Mean)",
+      "algorithm": "DummyRegressor",
+      "params": {
+        "strategy": "mean"
+      },
+      "val_metrics": {
+        "rmse": 0.9386,
+        "mae": 0.8401,
+        "r2": -0.0033,
+        "mape": 34.45,
+        "bias": 0.0538,
+        "coverage_90": 90.68
+      },
+      "test_metrics": {
+        "rmse": 0.9595,
+        "mae": 0.8625,
+        "r2": -0.0,
+        "mape": 34.95,
+        "bias": -0.0059,
+        "coverage_90": 92.12
+      },
+      "calibration_quantile_90": 1.3968,
+      "speed": {
+        "latency_ms_per_sample": 0.0,
+        "throughput_preds_per_sec": 6747183.0
+      },
+      "artifact_path": "artifacts\\dummy_baseline_model.joblib"
+    },
+    "ridge_regression": {
+      "key": "ridge_regression",
+      "name": "Ridge Linear Regressor",
+      "algorithm": "Ridge",
+      "params": {
+        "alpha": 1.5
+      },
+      "val_metrics": {
+        "rmse": 0.2347,
+        "mae": 0.185,
+        "r2": 0.9372,
+        "mape": 7.34,
+        "bias": -0.003,
+        "coverage_90": 90.03
+      },
+      "test_metrics": {
+        "rmse": 0.2413,
+        "mae": 0.1926,
+        "r2": 0.9367,
+        "mape": 7.37,
+        "bias": -0.0017,
+        "coverage_90": 91.1
+      },
+      "calibration_quantile_90": 0.3871,
+      "speed": {
+        "latency_ms_per_sample": 0.003,
+        "throughput_preds_per_sec": 348091.2
+      },
+      "artifact_path": "artifacts\\ridge_regression_model.joblib"
+    },
+    "random_forest": {
+      "key": "random_forest",
+      "name": "Random Forest Regressor",
+      "algorithm": "RandomForestRegressor",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 12
+      },
+      "val_metrics": {
+        "rmse": 0.2781,
+        "mae": 0.2049,
+        "r2": 0.9119,
+        "mape": 8.18,
+        "bias": 0.0163,
+        "coverage_90": 90.03
+      },
+      "test_metrics": {
+        "rmse": 0.2667,
+        "mae": 0.2046,
+        "r2": 0.9227,
+        "mape": 7.87,
+        "bias": 0.0012,
+        "coverage_90": 90.07
+      },
+      "calibration_quantile_90": 0.4336,
+      "speed": {
+        "latency_ms_per_sample": 0.292,
+        "throughput_preds_per_sec": 3419.3
+      },
+      "artifact_path": "artifacts\\random_forest_model.joblib"
+    },
+    "xgboost": {
+      "key": "xgboost",
+      "name": "XGBoost Regressor",
+      "algorithm": "XGBRegressor",
+      "params": {
+        "n_estimators": 120,
+        "max_depth": 5,
+        "learning_rate": 0.07
+      },
+      "val_metrics": {
+        "rmse": 0.2679,
+        "mae": 0.2018,
+        "r2": 0.9183,
+        "mape": 7.96,
+        "bias": 0.0129,
+        "coverage_90": 90.03
+      },
+      "test_metrics": {
+        "rmse": 0.2564,
+        "mae": 0.1936,
+        "r2": 0.9286,
+        "mape": 7.4,
+        "bias": 0.0031,
+        "coverage_90": 93.49
+      },
+      "calibration_quantile_90": 0.4469,
+      "speed": {
+        "latency_ms_per_sample": 0.009,
+        "throughput_preds_per_sec": 108653.0
+      },
+      "artifact_path": "artifacts\\xgboost_model.joblib"
+    }
+  }
+}
